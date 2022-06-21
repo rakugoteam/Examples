@@ -6,4 +6,4 @@ mono_crash.*.json
 /saves/
 /addons/*
 !addons/gd-plug
-!addons/vnkit
+!addons/raku-dialogue-ui
