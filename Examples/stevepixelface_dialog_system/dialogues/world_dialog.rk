@@ -1,0 +1,12 @@
+Door:
+	"The door is locked."
+	"Where did I put the key ?"
+	exit
+
+Pictures:
+	"Pictures of places that I have visited."
+	"I used to do a lot of traveling."
+	exit
+
+Bookcase:
+	"A dead plant and unread books."
