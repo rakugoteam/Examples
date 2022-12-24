@@ -1,4 +1,4 @@
-# ![Logo](WindowIcon.png) Rakugo Dialog UI
+# ![Logo](WindowIcon.png) Rakugo Examples
 ![MIT License](https://img.shields.io/github/license/rakugoteam/RakuDialogueUI)
 ![Stars](https://img.shields.io/github/stars/rakugoteam/RakuDialogueUI)
 ![Discord](https://img.shields.io/discord/484604562183815169?label=Rakugo&logo=discord&style=social)
