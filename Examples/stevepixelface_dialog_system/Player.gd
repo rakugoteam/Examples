@@ -1,8 +1,8 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 const Speed = 24
 
-onready var animSprite = $AnimSprite
+@onready var animSprite = $AnimSprite
 
 func _physics_process(delta: float) -> void:
 	var dir_h = Input.get_axis("ui_left", "ui_right")
@@ -19,4 +19,5 @@ func _physics_process(delta: float) -> void:
 		if animSprite.animation != "walk":
 			animSprite.play("walk")
 	
-	move_and_slide(Vector2(dir_h, 0) * Speed)
+	set_velocity(Vector2(dir_h, 0) * Speed)
+	move_and_slide()
