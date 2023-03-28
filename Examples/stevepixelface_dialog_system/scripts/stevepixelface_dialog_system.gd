@@ -19,9 +19,12 @@ func _ready() -> void:
 func _on_say(character:Dictionary, text:String):
 	dialogue_box_label.text = text
 	
-func _on_execute_script_finished(script_name:String):
+func _on_execute_script_finished(script_name:String, error_str:String):
 	dialogue_box.visible = false
 	player.set_physics_process(true)
+	
+	if error_str:
+		push_error(error_str)
 
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):

@@ -9,37 +9,13 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Resource",
-"class": "HistoryEntry",
-"language": "GDScript",
-"path": "res://addons/Rakugo/lib/resources/HistoryEntry.gd"
-}, {
-"base": "Object",
-"class": "Parser",
-"language": "GDScript",
-"path": "res://addons/Rakugo/lib/systems/Parser.gd"
-}, {
 "base": "Node",
 "class": "RakuScriptDialogue",
 "language": "GDScript",
 "path": "res://addons/Rakugo/lib/nodes/RakuScriptDialogue.gd"
-}, {
-"base": "Resource",
-"class": "Store",
-"language": "GDScript",
-"path": "res://addons/Rakugo/lib/resources/Store.gd"
-}, {
-"base": "Resource",
-"class": "StoreStack",
-"language": "GDScript",
-"path": "res://addons/Rakugo/lib/resources/StoreStack.gd"
 } ]
 _global_script_class_icons={
-"HistoryEntry": "",
-"Parser": "",
-"RakuScriptDialogue": "",
-"Store": "",
-"StoreStack": ""
+"RakuScriptDialogue": ""
 }
 
 [addons]
@@ -53,7 +29,7 @@ rakugo/rollback_steps=10
 rakugo/history_length=30
 rakugo/narrator/name="narrator"
 rakugo/debug=false
-rakugo/save_folder="res://saves"
+rakugo/save_folder="user://saves"
 rakugo/test_mode=false
 vnkit/saves/layout="pages"
 vnkit/saves/current_scroll=0
@@ -64,18 +40,15 @@ advanced_text/default_vars="{
 
 [application]
 
-config/name="RakuDialogUI"
+config/name="Rakugo Examples"
+config/description="Examples showing how you can use Rakugo Dialogue System in your games"
 boot_splash/fullsize=false
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
 [autoload]
 
-EBBCodeParser="res://addons/advanced-text/parsers/EBBCodeParser.gd"
-MarkdownParser="res://addons/advanced-text/parsers/MarkdownParser.gd"
-RenpyParser="res://addons/advanced-text/parsers/RenpyParser.gd"
-Rakugo="*res://addons/Rakugo/Rakugo.tscn"
-Settings="*res://addons/Rakugo/Settings.gd"
+Rakugo="*res://addons/Rakugo/Rakugo.gd"
 
 [debug]
 
