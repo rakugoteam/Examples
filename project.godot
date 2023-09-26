@@ -10,29 +10,18 @@ config_version=5
 
 [addons]
 
-advanced_text/markup="markdown"
 rakugo/game_version="1.0.0"
-rakugo/force_reload=false
-rakugo/auto_mode_delay=3
-rakugo/skip_delay=0.5
-rakugo/rollback_steps=10
 rakugo/history_length=30
 rakugo/narrator/name="narrator"
 rakugo/debug=false
 rakugo/save_folder="user://saves"
-rakugo/test_mode=false
-vnkit/saves/layout="pages"
-vnkit/saves/current_scroll=0
-vnkit/saves/skip_naming=true
-advanced_text/default_vars="{
-	\"test_setting\": \"variable from project settings\"
-}"
 
 [application]
 
 config/name="Rakugo Examples"
 config/description="Examples showing how you can use Rakugo Dialogue System in your games"
-config/features=PackedStringArray("4.0")
+run/main_scene=""
+config/features=PackedStringArray("4.1")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/fullsize=false
 config/icon="res://icon.png"
